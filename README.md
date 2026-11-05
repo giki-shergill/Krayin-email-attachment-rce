@@ -4,6 +4,8 @@ End-to-end proof of concept for the authenticated Krayin mail-composer path. The
 
 The broader research also traced an external-sender IMAP route to the same vulnerable attachment repository. This published PoC exercises the authenticated composer path.
 
+**Write-up:** [One Sink, Two Paths: Email-Attachment RCE in Krayin CRM](https://gshergill.medium.com/one-sink-two-paths-email-attachment-rce-in-krayin-crm-31ddc49ad720)
+
 - **Runtime-tested snapshot:** `a2c1960`
 - **Storage fix:** [v2.2.5](https://github.com/krayin/laravel-crm/releases/tag/v2.2.5), including [commit `4d81895`](https://github.com/krayin/laravel-crm/commit/4d818957bd5e32abef89d4708438f55a007fa8b5)
 - **Impact:** command execution as the web-server user when the deployment executes PHP beneath `/storage`
