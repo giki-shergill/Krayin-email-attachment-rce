@@ -1,4 +1,4 @@
-# Krayin Email-Attachment Storage — Inert Verifier
+# Krayin Email-Attachment Storage
 
 An inert regression verifier for the authenticated Krayin mail-composer path. It uploads random plain text under a `.php` filename and checks the returned storage path from a separate unauthenticated session. **It contains no PHP code and never attempts command execution.**
 
