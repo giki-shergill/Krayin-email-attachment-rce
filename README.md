@@ -13,10 +13,11 @@ The broader research also traced an external-sender IMAP route to the same vulne
 Run only in an authorized, disposable Krayin lab. The script prompts for the selected lab account's password and does not store it.
 
 ```bash
-bash poc.sh http://127.0.0.1:8000 admin
-
-# Restricted SalesRep lab account described in the research:
+# Low-privilege SalesRep path used in the submitted runtime evidence:
 bash poc.sh http://127.0.0.1:8000 sales
+
+# Optional admin comparison:
+bash poc.sh http://127.0.0.1:8000 admin
 ```
 
 The script first runs `id`. The uploaded PHP accepts another command through the `c` query parameter. It leaves an executable attachment behind, so delete the draft and `evil.php` from public storage immediately after testing.
